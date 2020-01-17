@@ -98,23 +98,17 @@ ImageView imageView;
                             });
                         } else{
                             Toast.makeText(SignUp.this,"error" + task.getException().getMessage(),Toast.LENGTH_SHORT).show();
-
                         }
-
-
-                        }
-
-
+                    }
                 });
             }
         });
 
-        loginView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Login.class));
-            }
-        });
-
-    }
+             loginView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                  public void onClick(View view) {
+                     startActivity(new Intent(getApplicationContext(),Login.class));
+                }
+           });
+      }
 }
