@@ -11,15 +11,14 @@
         android:id="@+id/emailtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginBottom="46dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:textColor="@android:color/background_light"
         android:textColorHint="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/passtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/passtext"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -27,9 +26,6 @@
         android:id="@+id/passtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="13dp"
-        android:layout_marginBottom="45dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -37,19 +33,21 @@
         android:textColorHint="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/LoginButton"
         app:layout_constraintEnd_toEndOf="@+id/LoginButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailtext" />
 
     <Button
         android:id="@+id/LoginButton"
         android:layout_width="225dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="23dp"
         android:background="#C9272626"
         android:text="Log in"
         android:textColor="#F1ECEC"
         android:textColorHint="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/Singup"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passtext" />
 
@@ -60,9 +58,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginBottom="64dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/Singup"
         app:layout_constraintTop_toBottomOf="@+id/Singup" />
 
@@ -70,22 +68,21 @@
         android:id="@+id/Singup"
         android:layout_width="262dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
         android:text="Not member click for Register now!"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textColorHint="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/progressBar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="19dp"
         app:layout_constraintBottom_toTopOf="@+id/emailtext"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
