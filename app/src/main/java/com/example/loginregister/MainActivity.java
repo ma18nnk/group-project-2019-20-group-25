@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if (id==R.id.EditProfile){
             Toast.makeText(this, "Edit Profile Clicked",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent (this, EditProfile.class));
         }
         if (id==R.id.help){
             Toast.makeText(this, "Help Clicked",Toast.LENGTH_SHORT).show();
