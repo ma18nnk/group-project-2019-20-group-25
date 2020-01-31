@@ -14,81 +14,131 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/empty2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="126dp"
-                android:layout_height="121dp"
+                android:layout_width="154dp"
+                android:layout_height="134dp"
+                android:layout_gravity="center"
                 app:srcCompat="@android:color/darker_gray" />
 
-            <Button
-                android:id="@+id/newProfilePicture"
-                android:layout_width="141dp"
-                android:layout_height="54dp"
-                android:text="New Profile Picture"
-                android:textSize="10sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="141dp"
-                android:layout_height="54dp"
-                android:text="Delete Profile Picture"
-                android:textSize="10sp" />
+                <Button
+                    android:id="@+id/newProfilePicture"
+                    android:layout_width="170dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="left"
+                    android:text="New Profile Picture"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/empty1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/deleteProfilePicture"
+                    android:layout_width="170dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:text="Delete Profile Picture"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/usernameTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Username" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/usernameEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name" />
+                android:text="" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/password1TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Password" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/password1EditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPassword" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/password2TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Re-enter new password" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/password2EditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPassword" />
 
-            <Button
-                android:id="@+id/save"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onSaveButtonClick"
-                android:text="Save" />
+                android:text="something" />
 
-            <Button
-                android:id="@+id/exit"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onExitButtonClick"
-                android:text="Exit" />
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onSaveButtonClick"
+                    android:text="Save" />
+
+                <TextView
+                    android:id="@+id/empty3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/exit"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onExitButtonClick"
+                    android:text="Exit" />
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 
