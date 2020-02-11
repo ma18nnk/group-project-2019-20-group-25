@@ -10,26 +10,47 @@
 
     <Button
         android:id="@+id/EventsView"
-        android:layout_width="274dp"
-        android:layout_height="76dp"
+        android:layout_width="257dp"
+        android:layout_height="83dp"
+
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="223dp"
         android:text="View All Events"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Event"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintTop_toBottomOf="@+id/ButtonEvent" />
 
     <Button
-        android:id="@+id/Event"
-        android:layout_width="274dp"
-        android:layout_height="76dp"
+        android:id="@+id/ButtonEvent"
+        android:layout_width="257dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="55dp"
         android:text="Creat Event"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/EventsView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/EventsView"
+        app:layout_constraintBottom_toTopOf="@+id/EventsView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/createvent"
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="66dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216" />
+        app:menu="@menu/main_menu"></LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

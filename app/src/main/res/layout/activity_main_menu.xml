@@ -31,13 +31,13 @@
         android:inputType="textPassword"
         android:textColor="@android:color/background_light"
         android:textColorHint="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/LoginButton"
+        app:layout_constraintBottom_toTopOf="@+id/SignupButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailtext" />
 
     <Button
-        android:id="@+id/LoginButton"
+        android:id="@+id/SignupButton"
         android:layout_width="225dp"
         android:layout_height="0dp"
         android:background="#C9272626"
@@ -70,7 +70,7 @@
         app:layout_constraintBottom_toTopOf="@+id/progressBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
+        app:layout_constraintTop_toBottomOf="@+id/SignupButton" />
 
     <ImageView
         android:id="@+id/imageView2"

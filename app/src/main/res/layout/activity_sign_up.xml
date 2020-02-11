@@ -31,13 +31,13 @@
         android:inputType="textPassword"
         android:textColor="@android:color/background_light"
         android:textColorHint="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/LoginButton"
+        app:layout_constraintBottom_toTopOf="@+id/SignupButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailtext" />
 
     <Button
-        android:id="@+id/LoginButton"
+        android:id="@+id/SignupButton"
         android:layout_width="231dp"
         android:layout_height="48dp"
         android:background="#2C2C2A"
@@ -59,7 +59,7 @@
         app:layout_constraintBottom_toTopOf="@+id/progressBar3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
+        app:layout_constraintTop_toBottomOf="@+id/SignupButton" />
 
     <ProgressBar
         android:id="@+id/progressBar3"
@@ -69,8 +69,8 @@
         android:layout_marginBottom="43dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/LoginButton"
-        app:layout_constraintStart_toStartOf="@+id/LoginButton"
+        app:layout_constraintEnd_toEndOf="@+id/SignupButton"
+        app:layout_constraintStart_toStartOf="@+id/SignupButton"
         app:layout_constraintTop_toBottomOf="@+id/loginView" />
 
     <ImageView

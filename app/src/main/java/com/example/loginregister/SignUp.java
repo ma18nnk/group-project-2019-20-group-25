@@ -18,9 +18,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-
-import java.util.regex.Pattern;
 
 public class SignUp extends AppCompatActivity {
 EditText emailtext, passwordtext;
@@ -40,16 +37,16 @@ ImageView imageView;
         setContentView(R.layout.activity_sign_up);
         emailtext= findViewById(R.id.emailtext);
         passwordtext= findViewById(R.id.passtext);
-        SingupButton = findViewById(R.id.LoginButton);
+        SingupButton = findViewById(R.id.SignupButton);
         loginView = findViewById(R.id.loginView);
         imageView=findViewById(R.id.imageView);
 
         fAuth=FirebaseAuth.getInstance();
         progressBar= findViewById(R.id.progressBar3);
 
-        if (fAuth.getCurrentUser()!= null){
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                finish();
+       if (fAuth.getCurrentUser()!= null){
+          startActivity(new Intent(getApplicationContext(), MainActivity.class));
+               finish();
         }
 
         SingupButton.setOnClickListener(new View.OnClickListener() {
